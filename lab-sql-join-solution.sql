@@ -23,7 +23,7 @@ select s.first_name, s.last_name, sum(p.amount) as total_amount
 from sakila.payment p
 right join sakila.staff s
 on s.staff_id = p.staff_id
-where month(p.payment_date) = 5 and year(p.payment_date) = 2005
+where month(p.payment_date) = 8 and year(p.payment_date) = 2005
 group by s.staff_id;
 
 -- List all films and the number of actors who are listed for each film.
